@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - LoseIt</title>
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+<body>
+    <header>
+        <h1>LoseIt - Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="#" id="logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="tracker">
+        <h2>Calorie Tracker</h2>
+        <input type="text" id="food" placeholder="Enter food item">
+        <input type="number" id="calories" placeholder="Calories">
+        <button onclick="addEntry()">Add</button>
+        <ul id="entries"></ul>
+        <h3>Total Calories: <span id="totalCalories">0</span></h3>
+    </section>
+
+    <script src="assets/js/tracker.js"></script>
+</body>
+</html>
